@@ -52,35 +52,58 @@
         section p {
             font-size: 16px;
             color: #555;
-        }.btn {
-    display: inline-block;
-    background-color: #e94560;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 15px;
-    font-size: 16px;
-}
-.btn:hover {
-    background-color: #c73650;
-}
-  footer {
-    background-color: #1a1a2e;
-    color: #aaa;
-    text-align: center;
-    padding: 25px 20px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-footer a {
-    color: #e94560;
-    text-decoration: none;
-    margin: 0 5px;
-}
-footer a:hover {
-    text-decoration: underline;
-}  
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e94560;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 15px 5px 0 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #c73650;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .item {
+            background: #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+        footer {
+            background-color: #1a1a2e;
+            color: #aaa;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 500px) {
+            .portfolio {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -103,34 +126,38 @@ footer a:hover {
                • Business Card Design<br>
                • Brand Identity</p>
         </section>
-  
-      <section>
-    <h2>My Portfolio</h2>
-    <div class="portfolio">
-        <div class="item">
-            <img src="design1.jpg" alt="Design 1">
-        </div>
-        <div class="item">
-            <img src="design2.jpg" alt="Design 2">
-        </div>
-        <div class="item">
-            <img src="design3.jpg" alt="Design 3">
-        </div>
+
+        <section>
+            <h2>My Portfolio</h2>
+            <div class="portfolio">
+                <div class="item">
+                    <img src="design1.jpg" alt="Design 1">
+                </div>
+                <div class="item">
+                    <img src="design2.jpg" alt="Design 2">
+                </div>
+                <div class="item">
+                    <img src="design3.jpg" alt="Design 3">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <p>Email: tanveerahamed32@gmail.com</p>
+            <p>WhatsApp: +880 1982095929</p>
+            <a href="mailto:tanveerahamed32@gmail.com" class="btn">Hire Me</a>
+            <a href="https://wa.me/8801982095929" class="btn">WhatsApp</a>
+        </section>
     </div>
-  </section>
-      
-      <section>
-    <h2>Contact Me</h2>
-    <p>Email: tanveerahamed32@gmail.com</p>
-    <p>WhatsApp: +880 1982095929</p>
-    <a href="mailto:yourname@email.com" class="btn">Hire Me</a>
-   </section> </div> <footer>
-    <p>© 2026 Tanveer. All rights reserved.</p>
-    <p>
-        <a href="#">Facebook</a> | 
-        <a href="#">Instagram</a> | 
-        <a href="#">Behance</a>
-    </p>
-   </footer>
+
+    <footer>
+        <p>© 2026 Tanveer. All rights reserved.</p>
+        <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Behance</a>
+        </p>
+    </footer>
 </body>
 </html>
