@@ -4,12 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Graphics by Tanveer | Graphic Designer - Logo, Poster & Brand Design</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Graphics by Tanveer">
+<meta property="og:title" content="Graphics by Tanveer | Graphic Designer - Logo, Poster & Brand Design">
+<meta property="og:description" content="Logo, poster, social media and t-shirt designs by Tanveer. Clients worldwide welcome.">
+<meta property="og:url" content="https://tanveer-desing.github.io/my-website/">
+<meta property="og:image" content="https://tanveer-desing.github.io/my-website/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
 <meta name="description" content="Graphics by Tanveer - logo, poster, social media, banner and brand identity design. Clients worldwide.">
 <style>
   :root {
-    --navy: #1a1a2e;
-    --navy-2: #16213e;
-    --red: #e94560;
+    --navy: #0d0d0d;
+    --navy-2: #1f1f1f;
+    --red: #d4a24c;
     --whatsapp: #25d366;
     --bg: #f5f6fa;
     --text: #1f2330;
@@ -35,7 +45,7 @@
   /* ---------- Navigation ---------- */
   header.nav {
     position: sticky; top: 0; z-index: 50;
-    background: rgba(26, 26, 46, 0.96); backdrop-filter: blur(8px);
+    background: rgba(13, 13, 13, 0.96); backdrop-filter: blur(8px);
   }
   .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .brand { color: #fff; font-weight: 700; font-size: 1.05rem; letter-spacing: .3px; }
@@ -55,7 +65,7 @@
   /* ---------- Hero ---------- */
   .hero {
     background:
-      radial-gradient(circle at 85% 20%, rgba(233, 69, 96, .25), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(212, 162, 76, .22), transparent 40%),
       linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
     color: #fff; padding: 96px 0 104px; text-align: center;
   }
@@ -73,7 +83,7 @@
     transition: transform .2s, box-shadow .2s, background .2s, color .2s;
   }
   .btn:hover { transform: translateY(-2px); }
-  .btn-primary { background: var(--red); color: #fff; box-shadow: 0 10px 22px rgba(233,69,96,.35); }
+  .btn-primary { background: var(--red); color: #111; box-shadow: 0 10px 22px rgba(212,162,76,.35); }
   .btn-outline { border-color: rgba(255,255,255,.4); color: #fff; }
   .btn-outline:hover { border-color: var(--red); color: var(--red); }
 
@@ -137,7 +147,7 @@
   }
   .step-num {
     width: 48px; height: 48px; margin: 0 auto 14px; border-radius: 50%;
-    background: var(--red); display: grid; place-items: center; font-weight: 700; font-size: 1.1rem;
+    background: var(--red); color: #111; display: grid; place-items: center; font-weight: 700; font-size: 1.1rem;
   }
   .step h4 { margin-bottom: 6px; font-size: 1.1rem; }
   .step p { color: #c9cde0; font-size: .92rem; }
@@ -154,7 +164,7 @@
   .btn-wa { background: var(--whatsapp); color: #fff; box-shadow: 0 10px 22px rgba(37,211,102,.3); }
   .btn-wa:hover { background: #1ebe5a; }
   .btn-mail { background: var(--navy); color: #fff; }
-  .btn-mail:hover { background: var(--red); }
+  .btn-mail:hover { background: var(--red); color: #111; }
 
   /* ---------- Footer ---------- */
   footer { background: var(--navy); color: #c9cde0; padding: 36px 0; text-align: center; }
